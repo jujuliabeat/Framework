@@ -1,0 +1,211 @@
+/* PARTE DE CIMA */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,900&display=swap');
+
+/* PARA TODA A PÁGINA */
+:root{
+    --prim: #791979;
+    --second: #9b429a;
+    --tri: #bc6abc;
+    --for: #de93dd;
+    --five: #ffbcff;
+    --extra: #ffc2ff;
+    --tras:#111827;
+}
+
+.barraP{
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: aliceblue;
+}
+.Home{
+    margin-top: 30px;
+       
+}
+.container a{
+    color: var(--prim);
+}
+
+/* CARD DA MARCELLA */
+
+.roupas{
+    padding: 25px;
+    background-color: var(--for);
+}
+
+    .roupas .card{
+        box-shadow: 0 5px 10px rgba(0,0,0,.6);
+        border-radius: 0.85rem;
+        background-color: rgba(17, 24, 39, 1);
+        color: whitesmoke;
+    }
+        .roupas .fala {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+            .roupas .btn{
+                background-color: var(--for);
+                color: #000000;
+                box-shadow: 0 5px 10px rgba(0,0,0,.6);
+                border-radius: 0.85rem;
+                border: none;
+            }
+
+/* MENU  */
+nav{
+    box-shadow: 0px 5px 10px black;
+}
+
+
+/* CONTEUDO - Júlia e Fernanda */
+
+.global{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 50px;
+    padding-bottom: 3px;
+    background-color: var(--five);
+  }
+    .crr{
+      display: grid;
+      flex-direction: row;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 300px 300px;
+      grid-template-areas: Esquerdgrid Direitogrid;
+      column-gap: 20px;
+      
+    }
+
+#carouselExampleSlidesOnly{
+    margin-bottom: 30px;
+    border-radius: 0.75rem;
+    background-color: rgba(17, 24, 39, 1);
+    box-shadow: 0 5px 10px rgba(0,0,0,.6);
+  }
+    #carouselExampleSlidesOnly img{
+      height: 500px;
+      border-radius: 0.65rem;
+      width: 400px;
+    }
+  
+  
+      /* LADO ESCRITO */
+          .Cdireito{
+            display: Direitogrid;
+            border-radius: 0.75rem;
+            background-color: var(--tras);
+            padding: 2rem;
+            color: rgba(243, 244, 246, 1);
+            box-shadow: 0 5px 10px rgba(0,0,0,.6);
+            text-align:center;
+            height: 500px;
+            margin-right: 20px;
+          }
+              .Cdireito h1{
+                margin-top: 50px;
+                margin-bottom: 20px;
+              }
+                .Cdireito button{
+                  margin-top: 30px;
+                }
+                  .Cdireito a{
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 17px;
+                  }
+  
+          .Cesquerdo{
+            display: Esquerdgrid;
+          }
+            .Cesquerdo img{
+              height: 500px;
+              border-radius: 0.65rem;
+            }
+  
+/* BOTÃO */
+
+      .Cdireito button {
+        width: 160px;
+        height: 60px;
+        cursor: pointer;
+        color: #fff;
+        font-size: 17px;
+        border-radius: 1rem;
+        border: none;
+        position: relative;
+        background: var(--second);
+        transition: 0.1s;
+      }
+  
+      .Cdireito button::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+        filter: blur(15px);
+        z-index: -1;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+  
+      .Cdireito button:active {
+        transform: scale(1.5) rotate(3deg);
+        background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+        transition: 0.9s;
+      }
+
+/* CARD */
+
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .card img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .card {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+    border-radius: 0;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    background-color: #e1e1e1;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+/* TESTE DE ICON */
+.icons{
+    text-align: center;
+}
+
+/* FOOTER */
+
+/* Voltar ao topo */
+
+.botao-control-top {
+    text-decoration: none;
+    color: black;
+    background-color: var(--extra);
+    padding: 10px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    box-shadow: 5px 10px 15px black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
