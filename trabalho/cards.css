@@ -1,0 +1,39 @@
+:root{
+  --prim: #791979;
+  --second: #9b429a;
+  --tri: #bc6abc;
+  --for: #de93dd;
+  --five: #ffbcff;
+  --extra: #ffc2ff;
+  --tras:#111827;
+}
+body{
+  background-image: linear-gradient(to top, var(--prim), var(--tras));
+}
+
+
+      .container-fluid{
+        background-repeat: no-repeat;
+        background-size: 100%;
+        text-align: left;
+        background-size: cover;
+        margin: 30px 0 20px 0;
+        padding: 35px;
+        color: var(--extra);
+        
+        
+    }
+    
+         .card{
+            justify-content:center ;
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            box-shadow: 0 5px 10px rgba(0,0,0,.6);
+            background-image: linear-gradient(to top, var(--prim), var(--tras));
+
+        }
+
+        h2{
+          text-align: center;
+        }
