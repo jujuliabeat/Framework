@@ -190,9 +190,17 @@ nav{
   }
 
 /* TESTE DE ICON */
+
 .icons{
-    text-align: center;
+  text-align: center;
+  background-color: var(--for);
+  padding: 50px;
+  color: whitesmoke;
 }
+.icons h4{
+  margin-top: 30px;
+}
+
 
 /* FOOTER */
 
@@ -212,3 +220,5 @@ nav{
     justify-content: center;
     align-items: center;
   }
+
+  
