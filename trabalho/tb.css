@@ -13,6 +13,7 @@
     --tras:#140314;
 }
 
+
 .barraP{
   height: 50px;
   position: fixed;
@@ -20,6 +21,8 @@
   left: 0;
   width: 100%;
   background-color: aliceblue;
+  z-index:1;
+  
 }
 .Home{
     margin-top: 30px;
@@ -27,6 +30,7 @@
 }
 .container a{
     color: var(--prim);
+
 }
 
 /* CARD DA MARCELLA */
@@ -35,25 +39,32 @@
     padding: 25px;
     margin: 0px;
     background-color: var(--for);
+    display: flex;
+    flex-direction: column;
 }
-
-    .roupas .card{
-        box-shadow: 0 5px 10px rgba(0,0,0,.6);
-        border-radius: 10px;
-        background-color:var(--tras);
-        color: whitesmoke;
+  .roupas .card{
+    border: 2px solid transparent; 
+    border-radius: 0.75rem;
+  }
+    .roupas .card img{
+      border: 0.30px solid transparent; 
+      border-radius: 0.75rem;
     }
-        .roupas .fala {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-            .roupas .btn{
-                background-color: var(--for);
-                color: #000000;
-                box-shadow: 0 5px 10px rgba(0,0,0,.6);
-                border-radius: 0.85rem;
-                border: none;
-            }
+      .roupas .row2{
+        display: flex;
+        flex-direction: row;
+      }
+          .roupas .fala {
+              text-align: center;
+              margin-bottom: 30px;
+          }
+              .roupas .btn{
+                  background-color: var(--for);
+                  color: #000000;
+                  box-shadow: 0 5px 10px rgba(0,0,0,.6);
+                  border-radius: 0.85rem;
+                  border: none;
+              }
 
 /* MENU  */
 nav{
@@ -339,3 +350,27 @@ footer{
     justify-content: center;
     align-items: center;
   }
+
+
+/* RESPONVIO PARA DISPOSITIVOS MAIORES */
+
+/* @media screen and (min-width: 780px) {
+
+  body{
+    margin: 0 150px 0 150px;
+  
+  }
+  
+  .barraP{
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: aliceblue;
+    z-index:1;
+    margin: 0 150px 0 150px;
+  }
+  
+} */
+/* RESPONSIVO PARA DISPOSITIVOS MENORES */
