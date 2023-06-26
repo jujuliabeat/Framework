@@ -10,7 +10,7 @@
     --for: #de93dd;
     --five: #ffbcff;
     --extra: #ffc2ff;
-    --tras:#111827;
+    --tras:#140314;
 }
 
 .barraP{
@@ -23,7 +23,7 @@
 }
 .Home{
     margin-top: 30px;
-       
+    width: 100%;
 }
 .container a{
     color: var(--prim);
@@ -33,13 +33,14 @@
 
 .roupas{
     padding: 25px;
+    margin: 0px;
     background-color: var(--for);
 }
 
     .roupas .card{
         box-shadow: 0 5px 10px rgba(0,0,0,.6);
-        border-radius: 0.85rem;
-        background-color: rgba(17, 24, 39, 1);
+        border-radius: 10px;
+        background-color:var(--tras);
         color: whitesmoke;
     }
         .roupas .fala {
@@ -53,10 +54,7 @@
                 border-radius: 0.85rem;
                 border: none;
             }
-              .roupas img{
-                height: 70%;
-                
-              }
+
 /* MENU  */
 nav{
     box-shadow: 0px 5px 10px black;
@@ -66,14 +64,17 @@ nav{
 /* CONTEUDO - Júlia e Fernanda */
 
 .global{
+    position: static;
     display: flex;
     flex-direction: column;
     margin: 0px;
     padding: 50px;
     padding-bottom: 3px;
-    background-color: var(--five);
+    background-color:var(--five);
   }
     .crr{
+      position: static;
+      width: 100%;
       display: grid;
       flex-direction: row;
       grid-template-columns: 50% 50%;
@@ -92,7 +93,7 @@ nav{
     #carouselExampleSlidesOnly img{
       height: 500px;
       border-radius: 0.65rem;
-      width: 400px;
+      width: 100%;
     }
   
   
@@ -122,11 +123,12 @@ nav{
                   }
   
           .Cesquerdo{
+            position: static;
             display: Esquerdgrid;
           }
             .Cesquerdo img{
               height: 500px;
-              border-radius: 0.65rem;
+              border-radius: 10px;
             }
   
 /* BOTÃO */
@@ -173,6 +175,8 @@ nav{
     max-height: 100%;
   }
   .card {
+    position: static;
+    width: 100%;
     margin: 0 0.5em;
     box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
     border: none;
@@ -181,7 +185,7 @@ nav{
 
   .carousel-control-prev,
   .carousel-control-next {
-    background-color: #e1e1e1;
+    background-color: #e1e1e100;
     width: 5vh;
     height: 5vh;
     border-radius: 50%;
@@ -190,7 +194,6 @@ nav{
   }
 
 /* TESTE DE ICON */
-
 .icons{
   text-align: center;
   background-color: var(--for);
@@ -200,7 +203,6 @@ nav{
 .icons h4{
   margin-top: 30px;
 }
-
 
 /* FOOTER */
 
@@ -220,5 +222,3 @@ nav{
     justify-content: center;
     align-items: center;
   }
-
-  
