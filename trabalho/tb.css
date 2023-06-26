@@ -53,10 +53,7 @@
                 border-radius: 0.85rem;
                 border: none;
             }
-              .roupas img{
-                height: 70%;
-                
-              }
+
 /* MENU  */
 nav{
     box-shadow: 0px 5px 10px black;
@@ -192,7 +189,13 @@ nav{
 /* TESTE DE ICON */
 .icons{
     text-align: center;
+    background-color: var(--for);
+    padding: 50px;
+    color: whitesmoke;
 }
+  .icons h4{
+    margin-top: 30px;
+  }
 
 /* FOOTER */
 
