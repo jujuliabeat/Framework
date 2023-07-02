@@ -1,5 +1,4 @@
 /* PARTE DE CIMA */
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans:ital@1&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,900&display=swap');
 
@@ -14,19 +13,17 @@
     --tras:#140314;
 }
 
-body{
-  font-family: 'Bebas Neue', sans-serif;
-}
-.logo{
-  height: auto;
-  width: 80px;
-}
-#menu-principal a{
-  color: var(--prim);
-}
 
-
-
+.barraP{
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: aliceblue;
+  z-index:1;
+  
+}
 .Home{
     width: 100%;
 }
@@ -65,11 +62,9 @@ body{
       margin-bottom: 5px;
     }
 
-       h1 {
+        #suplementos .fala {
           text-align: center;
           margin-bottom: 30px;
-          color: var(--prim);
-          
         }
 
             #suplementos .btn {
@@ -99,18 +94,30 @@ nav{
 /* CONTEUDO - Júlia e Fernanda */
 
 .global{
+    position: static;
+    display: flex;
+    flex-direction: column;
     margin: 0px;
     padding: 50px;
     padding-bottom: 3px;
     background-color:var(--five);
-    justify-content: center;
-    align-items: center;
   }
+    .crr{
+      position: static;
+      width: 100%;
+      display: grid;
+      flex-direction: row;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 300px 300px;
+      grid-template-areas: Esquerdgrid Direitogrid;
+      column-gap: 20px;
+      
+    }
+
   
       /* LADO ESCRITO */
           .Cdireito{
-            justify-content: center;
-            align-items: center;
+            display: Direitogrid;
             border-radius: 0.75rem;
             background-color: var(--tras);
             padding: 2rem;
@@ -118,8 +125,7 @@ nav{
             box-shadow: 0 5px 10px rgba(0,0,0,.6);
             text-align:center;
             height: 500px;
-            margin-top: 30px;    
-            width: auto;        
+            margin-right: 20px;
           }
               .Cdireito h1{
                 margin-top: 50px;
@@ -135,11 +141,12 @@ nav{
                   }
   
           .Cesquerdo{
+            position: static;
+            display: Esquerdgrid;
             box-shadow: 0 5px 10px rgba(0, 0, 0, .6);
-            width: auto;
           }
             .Cesquerdo img{
-              height: 600px;
+              height: 500px;
               border-radius: 10px;
               box-shadow: 0 5px 10px rgba(0, 0, 0, .6);
             }
@@ -211,19 +218,152 @@ nav{
   margin-top: 30px;
 }
 
-footer img{
-  width: auto;
-  height: 200px;
+
+
+
+/* FOOTER */
+* {
+  font-family: "Inter" sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 1px;
 }
 
 footer{
-  background-color: var(--extra) ;
-  color: black;
+  width: 100%;
+  color: whitesmoke;
+  background-color: black;
+}
+.footer-link{
+  text-decoration: none;
 }
 
+#footer_content{
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 3rem 3.5rem;
+}
 
+  #footer_contacts h1{
+    margin-bottom: 0,75rem;
+  }
 
+#footer_redesociais{
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem ;
+}
+#footer_contacts{
+    height: 300px;
+}
+    #footer_contacts p{
+        margin: 20px;
+        margin-left: 0px;
+        color: var(--second);
+    }
 
+#footer_redesociais .footer-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  color: black;
+  border-radius: 5rem;
+  transition: all 0.4s;
+}
+#footer_redesociais .footer-link i{
+  font-size: 1.25rem;
+  align-items: center;
+  height: 30px;
+}
+    #footer_redesociais .footer-link:hover{
+      opacity: 0.8;
+    }
+        #instagram{
+          background: linear-gradient(#7f37c9, #ff2992,#ff9807) ;
+        }
+        #facebook{
+          background-color: #4267b3;
+        }
+        #whatsapp{
+          background-color: #25d366;
+        }
+.footer-list{
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  list-style: none;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+    .footer-list .footer-link{
+      color: #9b429a;
+      transition: all 0.4s;
+    }
+    .footer-list .footer-link:hover{
+      color: #bc6abc;
+    }
+    
+    
+    #footer_subscribe{
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-top: 30px;
+  margin-bottom: 10px;
+      
+    }
+    #footer_subscribe p{
+      color: #9b429a;
+    }
+    
+    
+    
+    
+    #input_group{
+      display: flex;
+      align-items:center ;
+      background-color: #9b429a;
+      border-radius: 4px;
+
+    }
+#input_group input{
+  all: unset;
+  padding: 0.75rem;
+  width: 100%;
+}
+#input_group button{
+  background-color: #9b429a;
+  border: none;
+  color: var(--for);
+  padding: 0px 1.25rem;
+  font-size: 1.125rem;
+  height: 100%;
+  border-radius: 0px 4px 4px 0px;
+  cursor: pointer;
+  transition: all 0.4s;
+
+}
+#input_group button:hover{
+  opacity: 0.8;
+}
+  #footer_copyright{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+  }
+  footer img{
+    height: 230px;
+    width: 300px;
+    margin-top: 1px;
+    margin-left: 1px;
+}
 
 
 /* Voltar ao topo */
@@ -243,7 +383,40 @@ footer{
     align-items: center;
   }
 
+  @media screen and(max-width: 768px){
+    #footer_content{
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+    
+  }
+  @media screen and(max-width: 7426px){
+    #footer_content{
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+    
+  }
 
+/* RESPONVIO PARA DISPOSITIVOS MAIORES */
 
+/* @media screen and (min-width: 780px) {
 
- 
+  body{
+    margin: 0 150px 0 150px;
+  
+  }
+  
+  .barraP{
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: aliceblue;
+    z-index:1;
+    margin: 0 150px 0 150px;
+  }
+  
+} */
+/* RESPONSIVO PARA DISPOSITIVOS MENORES */
