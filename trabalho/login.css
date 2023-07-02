@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans:ital@1&display=swap');
+
 
 :root{
     --prim: #791979;
@@ -54,9 +56,13 @@ i{
     margin: 10px;
     color: var(--tras);
 }
-p{
+p {
     margin-top: 25px;
     text-align: center;
+    color: var(--tras);
+    font-family: 'Bebas Neue', sans-serif;}
+
+a{
     color: var(--tras);
 }
 .img{
@@ -98,6 +104,8 @@ p{
     } 
     .botao{
         display: flex;
+        margin-bottom: 10px;
+
     }
     .btn2{
         margin: 10px 15px 0 15px;
