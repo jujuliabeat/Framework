@@ -72,14 +72,14 @@ body{
           
         }
 
-            #suplementos .btn {
+/*             #suplementos .btn {
               background-color: var(--second);
               color: white;
               box-shadow: 0 5px 10px rgba(0, 0, 0, .6);
               border-radius: 0.85rem;
               border: none;
               transition: 0.1s;
-            }
+            } */
               #suplementos .btn:active {
                 transform: scale(1.5) rotate(1deg);
                 background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgb(112, 2, 255) 100.2% );
@@ -267,4 +267,5 @@ footer{
     justify-content: center;
     align-items: center;
   }
+
 
